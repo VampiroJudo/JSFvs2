@@ -2615,3 +2615,9 @@ Alternatively, run the setup archiver application as follows:
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-09 13:33:01.725
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-09 13:37:14.026
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-09 13:37:14.031
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
