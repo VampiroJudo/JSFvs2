@@ -1,0 +1,27 @@
+package com.conley.jsf.musicshop;
+
+import java.util.List;
+import java.util.Map;
+import javax.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
+public class ProductServiceImpl implements ProductService {
+	
+	private final Map<Long, Product> products;
+	
+	private final List<Product> popularProducts;
+	
+	public ProductServiceImpl() {
+		Map<Long, Product> map = new HashMap<>();
+		map.put(1L, new Product(1L, "Microphone", "The M-16 Microphone is the ultimate in sound quality and ease of use.", 95.00, "Microphone" ));
+		map.put(2L, new Product(2L, "Guitar", "This guitar has amazing tone and looks to boot!", 1000.00, "Guitar"));
+		map.put(3L, new Product(3L, "Saxophone", "You can wail like 'Bird' Parker on this sax. Perfect for the up and coming Jazz Man.", 1500.00, "Saxophone"));
+		map.put(4L, new Product(4L, "Bass Guitar", "This is the perfect bass to put them fat fingered meat butcher hands to work, makes some solid thick tones to set the groove", 700.00, "Bass Guitar"));
+		map.put(5L, new Product(5L,"Drum Kit","This is the kit all metalheads and jazz bangers dream of!", 800.00, "Drum Kit"))
+	}
+	
+	
+	
+	
+
+}
