@@ -1,0 +1,24 @@
+package com.conley.jsf.musicshop;
+
+import javax.annotation.PostConstruct;
+
+@Named
+@RequestScoped
+public class PopularProducts {
+	
+	@Inject
+	private ProductService productService;
+	
+	private List<Product> products;
+	
+	@PostConstruct
+	public void initialize() {
+		products = productService.getPopularProducts():
+	}
+	
+	public List<Product> getProducts() {
+		return products;
+	}
+
+
+}
