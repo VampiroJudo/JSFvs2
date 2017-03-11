@@ -1,7 +1,6 @@
 package com.conley.jsf.musicshop;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 
 public final class Product implements Serializable {
