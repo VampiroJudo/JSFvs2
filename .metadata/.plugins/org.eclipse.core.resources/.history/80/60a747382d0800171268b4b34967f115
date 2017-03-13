@@ -46,22 +46,5 @@ public class ShoppingCart<ShoppingCartLine> implements Serializable {
         lines.add(new ShoppingCartLine(product));
         incrementTotalQuantityAndAmount(product.getPrice());
 	}
-	
-	public void removeProduct(Product product) {
-        Iterator<ShoppingCartLine> it = lines.iterator();
-        while (it.hasNext()) {
-            ShoppingCartLine line = it.next();
-
-            // If this is the line for this product, decrement quantity and amount;
-            // remove the line if the quantity has become 0
-            if (line.getProduct().getId() == product.getId()) {
-                if (line.decrementQuantityAndAmount()) {
-                    it.remove();
-                }
-
-                decrementTotalQuantityAndAmount(product.getPrice());
-            }
-        }
-    }
 
 }
