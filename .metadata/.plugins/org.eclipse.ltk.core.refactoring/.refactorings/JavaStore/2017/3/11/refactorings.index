@@ -1,1 +1,10 @@
 1489437246278	Delete element
+1489444048271	Move 'faces-config.xml' to 'templates'
+1489444053609	Move 'faces-config.xml' to 'WEB-INF'
+1489444091540	Delete element
+1489444181291	Delete element
+1489444700280	Delete element
+1489444764492	Delete element
+1489444806223	Rename resource 'web.xhtml'
+1489444859832	Rename resource 'web.xml'
+1489444867943	Move 'faces-config.xml' to 'WEB-INF'
