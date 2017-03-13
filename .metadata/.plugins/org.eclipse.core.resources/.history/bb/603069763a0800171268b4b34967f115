@@ -27,12 +27,7 @@
 		<ui:fragment rendered="#{not empty shoppingCart.lines}">
 			<section>
 				<h:form>
-					<h:dataTable value="#{shoppingCart.lines}" var="line"
-								 styleClass="shoppingcart-table"
-								 headerClass="shoppingcart-header"
-								 rowClasses="shoppingcart-row-odd,shoppingcart-row-even"
-								 columnClasses=:shoppingcart-col-name,shoppingcart-col-price,shoppincart-col-quantity,shoppingcart-col-amount"
-								 footerClass="shoppingcart-footer">
+					<h:dataTable value="#{shoppingCart.lines}" var="line">
 						<h:column>
 							<f:facet name="header">Product</f:facet>
 							<h:outputLink value="product-details.xhtml">
