@@ -8,3 +8,7 @@
 1489444806223	Rename resource 'web.xhtml'
 1489444859832	Rename resource 'web.xml'
 1489444867943	Move 'faces-config.xml' to 'WEB-INF'
+1489445113626	Rename resource 'web.xhtml'
+1489445119447	Move 'web.xml' to 'WEB-INF'
+1489445124233	Move 'faces-config.xml' to 'test'
+1489445137296	Move 'faces-config.xml' to 'WEB-INF'
