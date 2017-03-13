@@ -12,15 +12,14 @@
 	<ui:param name="pageTitle" value="Product Details"/>
 	<ui:define name="panel-main">
 		<section class="product-details">
-				<h:graphicImage library="musicshop" name="images/#{productDetails.product.imageName}-400X400" 
+					<h:graphicImage library="musicshop" name="images/#{productDetails.product.imageName}-400X400" 
 									alt="#{productDetails.product.name}"/>
-				<h:form>
-					<h1>#{productDetails.product.name}</h1>
-					<p>#{productDetails.product.description}</p>
-					<p>Price - $ #{productDetails.product.price} - <h:commandLink>Add to cart</h:commandLink></p>
-					<p><h:outputLink value="index.xhtml">Back to Popular Products</h:outputLink></p>
-				</h:form>
-			</section>
-		</ui:define>
+					<h:form>
+						
+						<p>Price - $ 95.00 - <h:commandLink>Add to cart</h:commandLink></p>
+						<p><h:outputLink value="index.xhtml">Back to Popular Products</h:outputLink></p>
+					</h:form>
+		</section>
+	</ui:define>
 </ui:composition>
 </html>
