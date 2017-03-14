@@ -1,0 +1,11 @@
+package com.conley.jsf.musicshop;
+
+import javax.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
+public class UserServiceImpl implements UserService {
+
+	private final Map<String, User> users = new ConcurrentHashMap<>();
+	
+
+}
