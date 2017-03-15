@@ -64,19 +64,5 @@ public class User implements Serializable {
 		this.phoneNumber = phoneNumber;
 	}
 	
-	public Date getBirthdate() {
-		return birthDate;
-	}
 	
-	public void setBirthDate(Date birthDate) {
-		this.birthDate = birthDate;
-	}
-	
-	public Boolean getSubscribedToNewsletter() {
-        return subscribedToNewsLetter;
-    }
-
-    public void setSubscribedToNewsletter(Boolean subscribedToNewsletter) {
-        this.subscribedToNewsLetter = subscribedToNewsletter;
-    }
 }

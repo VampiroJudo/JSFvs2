@@ -44,39 +44,15 @@ public class User implements Serializable {
 		return lastName;
 	}
 	
+	public void String setLastName(String lastName) {
+		this.lastName = lastname;
+	}
+	
+	
+	
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastName = lastname;
 	}
 	
-	public String getEmailAddress() {
-		return emailAddress;
-	}
 	
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
-	}
-	
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
-	
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
-	
-	public Date getBirthdate() {
-		return birthDate;
-	}
-	
-	public void setBirthDate(Date birthDate) {
-		this.birthDate = birthDate;
-	}
-	
-	public Boolean getSubscribedToNewsletter() {
-        return subscribedToNewsLetter;
-    }
-
-    public void setSubscribedToNewsletter(Boolean subscribedToNewsletter) {
-        this.subscribedToNewsLetter = subscribedToNewsletter;
-    }
 }
