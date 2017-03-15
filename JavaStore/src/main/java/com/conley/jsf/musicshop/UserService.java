@@ -1,9 +1,8 @@
 package com.conley.jsf.musicshop;
 
 public interface UserService {
-	
-	User getUser(String username);
-	
-	void saveUser(User user);
 
+    User getUser(String username);
+
+    void saveUser(User user);
 }

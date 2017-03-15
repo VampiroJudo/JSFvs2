@@ -9,19 +9,15 @@
 		<item value="350" key="dialogWidth"/>
 		<list key="textEntries">
 			<item value="1"/>
-			<item value="1"/>
 		</list>
 		<list key="orderedElements">
 			<item value="org.eclipse.wst.sse.ui.preferences.xml.contentassist"/>
-			<item value="backardHistory"/>
 		</list>
 		<list key="orderedProviders">
 			<item value="org.eclipse.ui.preferences"/>
-			<item value="org.eclipse.ui.actions"/>
 		</list>
 		<list key="textArray">
 			<item value="xml"/>
-			<item value="faces-config.xml"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
