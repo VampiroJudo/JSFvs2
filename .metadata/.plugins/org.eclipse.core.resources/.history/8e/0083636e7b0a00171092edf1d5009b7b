@@ -24,7 +24,7 @@
 			<p><h:outputLink value="index.xhtm">Back to Popular Products</h:outputLink></p>
 		</section>
 	</ui:define>
-	<ui:define name="panel-main">
+	<define name="panel-main">
 		<ui:fragment rendered="#{not userManager.signedIn}">
 			<section>
 				<h:form>
@@ -42,6 +42,6 @@
 				</h:form>
 			</section>
 		</ui:fragment>
-	</ui:define>
+	</define>
 </ui:composition>	 
 </html>

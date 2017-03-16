@@ -24,7 +24,7 @@
 			<p><h:outputLink value="index.xhtm">Back to Popular Products</h:outputLink></p>
 		</section>
 	</ui:define>
-	<ui:define name="panel-main">
+	<define name="panel-main">
 		<ui:fragment rendered="#{not userManager.signedIn}">
 			<section>
 				<h:form>
@@ -37,11 +37,11 @@
 					   <h:inputSecret id="password" value="#{signIn.password"/>
 					   
 					   <h:outputText value=""/>
-					   <h:commandButton value="Submit" action="#{signIn.submit"/>
+					   <hLcommandButton value="Submit" action="#{signIn.submit"/>
 					</h:panelGrid>
 				</h:form>
 			</section>
 		</ui:fragment>
-	</ui:define>
+	</define>
 </ui:composition>	 
 </html>
