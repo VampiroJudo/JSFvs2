@@ -23,26 +23,9 @@
 				<h:panelGrid column="2" styleClass="form-grid"
 				columnClasses="form-column-label, form-column-input">
 			<h:outputLabel for="username">Username</h:outputLabel>
-			<h:inputText id="username" value="#{userDetails.user.username}" size="20"
-						 readonly="#{userManager.signedIn}"/>
+			<h:inputText id="username" value="#{userDetails.user.username"} size="20"
+						 readonly="#{userManager.signedIn"}/>
 						 
-			<h:outputLabel for="password">Password</h:outputLabel>
-			<h:inputSecret id="password" value="userdetails.user.password}" size="20"/>
-			
-			<h:outputLabel for="firstName">First Name</h:outputLabel>
-			<h:inputText id="firstName" value="#{userDetails.user.firstName}" size="30"/>
-			
-			<h:outputLabel for="lastName">Last Name</h:outputLabel>
-			<h:inputText id="lastName" value="#{userDetails.user.lastName}" size="30"/>
-			
-			<h:outputLabel for="emailAddress">Email Address</h:outputLabel>
-			<h:inputText id="emailAddress" value="#{userDetails.user.emailAddress}" size="20"/>
-			
-			<h:outputLabel for="phoneNumber">Phone Number</h:outputLabel>
-			<h:inputText id="phoneNumber" value="#{userDetails.user.phoneNumber}" size="20"/>
-			
-			<h:outputLabel for="subscribedToNewsLetter">Subscribe to newsletter?</h:outputLabel>
-			
 			
 			
 		</section>

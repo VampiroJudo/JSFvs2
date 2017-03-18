@@ -32,16 +32,8 @@
 			<h:outputLabel for="firstName">First Name</h:outputLabel>
 			<h:inputText id="firstName" value="#{userDetails.user.firstName}" size="30"/>
 			
-			<h:outputLabel for="lastName">Last Name</h:outputLabel>
+			<h:outputLabel for="lastName">Last Name</H:outputLabel>
 			<h:inputText id="lastName" value="#{userDetails.user.lastName}" size="30"/>
-			
-			<h:outputLabel for="emailAddress">Email Address</h:outputLabel>
-			<h:inputText id="emailAddress" value="#{userDetails.user.emailAddress}" size="20"/>
-			
-			<h:outputLabel for="phoneNumber">Phone Number</h:outputLabel>
-			<h:inputText id="phoneNumber" value="#{userDetails.user.phoneNumber}" size="20"/>
-			
-			<h:outputLabel for="subscribedToNewsLetter">Subscribe to newsletter?</h:outputLabel>
 			
 			
 			
