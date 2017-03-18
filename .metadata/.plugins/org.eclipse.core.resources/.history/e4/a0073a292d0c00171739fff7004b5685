@@ -1,0 +1,33 @@
+package com.conley.jsf.musicshop;
+
+import java.io.Serializable;
+import javax.faces.view.ViewScoped;
+import java.inject.Named
+
+@Named
+@ViewScoped
+public class UserDetails implements Serializable {
+	
+	private static final long serialVersion = 1L;
+	
+	@Inject
+	private UserManager userManager;
+	
+	private User user;
+	
+	public User	 getUser() {
+		return user;
+	}
+	
+	public void onload() {
+		user = userManager.isSignIn() ?userManager.getCurrentUser() : new User();
+		
+	}
+	
+	public String submit() {
+		return userManager.save(user);
+	}
+	
+	
+
+}
