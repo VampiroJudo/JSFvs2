@@ -41,23 +41,14 @@
 			<h:outputLabel for="phoneNumber">Phone Number</h:outputLabel>
 			<h:inputText id="phoneNumber" value="#{userDetails.user.phoneNumber}" size="20"/>
 			
-			<h:outputLabel for="birthDate">Birth date</h:outputLabel>
-			<h:inputText id="birthDate" p:type="date" value="#{userDetails.user.birthDate}">
-				<f:convertDateTime pattern="yyyy-MM-dd"/>
-			</h:inputText>
+			<h:outputLabel for="subscribedToNewsLetter">Subscribe to newsletter?</h:outputLabel>
 			
-			<h:outputLabel for="subscribedToNewsletter">Subscribe to the newsletter?</h:outputLabel>
-			<h:selectOneRadio id="subscribedToNewsLetter"
-							  value="#{userDetails.user.subscribedToNewsLetter}">
-				<f:selectItem itemValue="#{true}" itemLabel="Yes"/>
-				<f:selectItem itemValue="#{false}" itemLabel="No"/>
-			</h:selectOneRadio>
 			
-			<h:outputText value=""/>
-			<h:commandButton value="Submit" action="#{userDetails.submit}"/>
-		</h:panelGrid>
-	</h:form>
-</section>
-</ui:define>
-</ui:composition>
+			
+		</section>
+      
+
+
+
+
 </html>

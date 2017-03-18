@@ -53,11 +53,13 @@
 				<f:selectItem itemValue="#{false}" itemLabel="No"/>
 			</h:selectOneRadio>
 			
-			<h:outputText value=""/>
-			<h:commandButton value="Submit" action="#{userDetails.submit}"/>
-		</h:panelGrid>
-	</h:form>
-</section>
-</ui:define>
-</ui:composition>
+			
+			
+			
+		</section>
+      
+
+
+
+
 </html>
