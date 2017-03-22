@@ -41,6 +41,7 @@
 			
 			<h:outputLabel for="phoneNumber">Phone Number</h:outputLabel>
 			<h:inputText id="phoneNumber" value="#{userDetails.user.phoneNumber}" size="20">
+				<f:converter converterId="com.conley.jsf.converter.PhoneNumber"/>
 				<f:validator validatorId="com.conley.jsf.validator.PhoneNumber"/>
 			
 			<h:outputLabel for="birthDate">Birth date</h:outputLabel>

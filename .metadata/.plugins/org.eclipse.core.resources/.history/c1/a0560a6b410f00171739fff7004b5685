@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-@FacesConverter(forClass = PhoneNumber.class)
+@FacesConverter("com.conley.jsf.converter.PhoneNumber")
 public class PhoneNumberConverter implemenets Converter{
 	
 	private static final Pattern PHONE_NUMBER_PATTERN = Pattern.compile("[0-9]-{3}-[0-9]-{3}-[0-9]-{4}");
