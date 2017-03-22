@@ -12,7 +12,7 @@ import javax.faces.validator.Validator;
 import javax.faces.validator.ValidatorException;
 
 
-@FacesValidator("com.conley.jsf.validator.PhoneNumber")
+@FacesValidator("com.conley.jsf.PhoneNumber")
 public class PhoneNumberValidator implements Validator {
     private static final Logger LOG = LoggerFactory.getLogger(PhoneNumberValidator.class);
 
