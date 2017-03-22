@@ -23,7 +23,7 @@ public class PhoneNumber implements Serializable {
 	}
 	
 	public void setOfficeCode(String officeCode) {
-		this.officeCode = officeCode;
+		return subscriberNumber;
 	}
 	
 	public void setSubscriberNumber(String subsciberNumber) {
@@ -34,4 +34,7 @@ public class PhoneNumber implements Serializable {
 	public String toString() {
 		return areaCode + "-" + officeCode + "-" + subscriberNumber; 
 	}
+	
+	
+
 }

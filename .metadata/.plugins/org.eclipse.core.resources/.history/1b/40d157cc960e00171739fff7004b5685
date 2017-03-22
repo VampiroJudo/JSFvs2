@@ -22,16 +22,6 @@ public class PhoneNumber implements Serializable {
 		return officeCode;
 	}
 	
-	public void setOfficeCode(String officeCode) {
-		this.officeCode = officeCode;
-	}
 	
-	public void setSubscriberNumber(String subsciberNumber) {
-		this.subscriberNumber = subscriberNumber;
-	}
-	
-	@Override
-	public String toString() {
-		return areaCode + "-" + officeCode + "-" + subscriberNumber; 
-	}
+
 }
