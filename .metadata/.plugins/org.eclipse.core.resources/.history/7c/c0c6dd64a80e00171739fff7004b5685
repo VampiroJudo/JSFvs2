@@ -37,13 +37,6 @@ public class PhoneNumberConverter implemenets Converter{
 		return phoneNumber;
 	}
 	
-	@Override
-	public String getAsString(FacesContext context, UIComponent component, Object value) {
-		LOG.debug("getAsString: [{}]", value);
-		
-		return Objects.toString(value);
-		
-}
 	
 
-
+}
