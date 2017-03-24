@@ -19,7 +19,6 @@ INDEX VERSION 1.129+/Users/JohnnyRingo/Desktop/JavaStore/.metadata/.plugins/org.
 2465022724.index
 1044104405.index
 624708564.index
-3196428311.index
 2763200912.index
 3266567714.index
 1819685514.index
