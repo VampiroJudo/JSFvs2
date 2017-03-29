@@ -1,7 +1,0 @@
-package com.conley.jsf.musicshop;
-
-
-@FacesConverter("com.conley.jsf.converter.PhoneNumber")
-public class PhoneNumberConverter {
-
-}
