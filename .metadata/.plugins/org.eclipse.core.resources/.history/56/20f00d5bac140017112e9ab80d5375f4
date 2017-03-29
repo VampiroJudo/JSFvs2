@@ -31,11 +31,11 @@ public class UserManager implements Serializable {
         if (user == null || !password.equals(user.getPassword())) {
             FacesContext.getCurrentInstance().addMessage(null,
                     new FacesMessage("Please enter a valid username and password."));
-            return "failure";
+            return "sign-in";
         }
 
         currentUser = user;
-        return "success";
+        return "index";
     }
 
     public String signOut() {
