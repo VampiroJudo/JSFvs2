@@ -17,22 +17,18 @@
 			<section>
 				<h:messages styleClass="validation-messages"/>
 				<h:form>
-					<h:panelGrid columns="2" styleClass="form-grid" columnClasses="form-column-label,form-column-text">
-						<h:outputLabel for="name">Name</h:outputLabel>
-						<h:inputText id="name" value="#{checkout.shippingName}" size="30"/>
-					
-						<h:outputLabel for="address">Address</h:outputLabel>
-						<h:inputText id="address" value="#{checkout.shippingAddress}" size="30"/>
-					
-						<h:outputText value=""/>
-						<h:commandButton value="Continue" action="payment"/>
-					
-						<h:outputText value=""/>
-						<h:commandButton value="Cancel" action="finished"/>
-					</h:panelGrid>
-				</h:form>
-		    </section>
-		</ui:define>
-	</ui:composition>
-	</f:view>
+					<h:panelGrid columns="2" styleClass="form-grid" columnClasses="form-column-label"
+			</section>
+			
+				  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
 </html>
