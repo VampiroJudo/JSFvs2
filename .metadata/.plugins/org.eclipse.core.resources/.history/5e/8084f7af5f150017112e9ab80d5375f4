@@ -36,7 +36,6 @@
 					</h:panelGrid>
 				</h:form>
 		   </section>
-	</ui:define>
 </html>
 
 
