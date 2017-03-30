@@ -20,11 +20,7 @@
       					<f:convertNumber type="currency" currencySymbol="$"/>
       				</h:outputText>
       				was successful.</p>
-      			<h:form>
-      				<h:commandButton value="Finish" action="#{checkout.finishOrder}" styleClass="button">Finish</h:commandButton>
-      			</h:form>
       		</section>
-      	</ui:define>
-      </ui:composition>
-    </f:view>
+      
+      
 </html>
