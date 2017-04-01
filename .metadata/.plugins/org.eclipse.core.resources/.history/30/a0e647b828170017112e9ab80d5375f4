@@ -39,7 +39,9 @@
                         <h:inputText id="emailAddress" value="#{userDetails.user.emailAddress}" size="20"/>
 
                         <h:outputLabel for="phoneNumber">Phone number</h:outputLabel>
-                       	<mt:phoneNumber id="phoneNumber" value="#{userDetails.user.phoneNumber}"/>
+                        <h:inputText id="phoneNumber" value="#{userDetails.user.phoneNumber}" size="20">
+                            <f:validator validatorId="com.conley.jsf.validator.PhoneNumber"/>
+                        </h:inputText>
 
                         <h:outputLabel for="birthDate">Birth date</h:outputLabel>
                         <h:inputText id="birthDate" p:type="date" value="#{userDetails.user.birthDate}">
