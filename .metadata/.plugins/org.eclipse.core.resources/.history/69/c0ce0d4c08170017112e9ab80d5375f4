@@ -8,7 +8,7 @@
 	<ui:composition template="/templates/page-template.xhtml">
 		<ui:param name="pageTitle" value="Review Order"/>
 		<ui:define name="panel-top">
-			<section>
+			<section
 				<h1>Review order</h1>
 				<p>Please review your order.</p>
 			</section>

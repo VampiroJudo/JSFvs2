@@ -6,11 +6,11 @@
 	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <f:view contentType="text/html" contracts="common,device-desktop,theme-#{theme.name}">
 	<ui:composition template="/templates/page-template.xhtml">
-		<ui:param name="pageTitle" value="Shipping Details"/>
-		<ui:define name="panel-top"/>
+		<ui:param name="pageTitle" value="Payment Details"/>
+		<ui:define name="panel-top">
 			<section>
-				<h1>Shipping Details</h1>
-				<p>Please enter the address to ship your order to.</p>
+				<h1>Payment Details</h1>
+				<p>Please enter your payment details.</p>
 			</section>
 		</ui:define>
 		<ui:define name="panel-main">
@@ -18,21 +18,27 @@
 				<h:messages styleClass="validation-messages"/>
 				<h:form>
 					<h:panelGrid columns="2" styleClass="form-grid" columnClasses="form-column-label,form-column-text">
-						<h:outputLabel for="name">Name</h:outputLabel>
-						<h:inputText id="name" value="#{checkout.shippingName}" size="30"/>
-					
-						<h:outputLabel for="address">Address</h:outputLabel>
-						<h:inputText id="address" value="#{checkout.shippingAddress}" size="30"/>
-					
+						<h:outputLabel for="cardType">Credit card type</h:outputLabel>
+						<h:selectOneMenu id="cardType">
+							<f:selectItem itemLabel="American Express" itemValue="AMEX"/>
+							<f:selectItem itemLabel="Mastercard" itemValue="MC"/>
+							<f:selectItem itemLabel="VISA" itemValue="VISA"/>
+						</h:selectOneMenu>
+						
+						<h:outputLabel for="cardNumber">Credit card number</h:outputLabel>
+						<h:inputText id="cardNumber" value="#{checkout.creditCardNumber}" size="16"/>
+						
 						<h:outputText value=""/>
-						<h:commandButton value="Continue" action="payment"/>
-					
+						<h:commandButton value="Continue" action="review"/>
+						
 						<h:outputText value=""/>
 						<h:commandButton value="Cancel" action="finished"/>
 					</h:panelGrid>
 				</h:form>
-		    </section>
-		</ui:define>
-	</ui:composition>
-	</f:view>
+		   </section>
+	</ui:define>
 </html>
+
+
+
+

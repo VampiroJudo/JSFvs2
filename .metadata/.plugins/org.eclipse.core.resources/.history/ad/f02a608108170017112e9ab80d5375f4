@@ -21,7 +21,7 @@
       				</h:outputText>
       				failed.</p>
       			<h:form>
-      	        	<h:commandButton value="Finish" action="#{checkout.finishOrder}" styleClass="button-right">Finish</h:commandButton>
+      				
       			</h:form>
       		</section>
       	</ui:define>

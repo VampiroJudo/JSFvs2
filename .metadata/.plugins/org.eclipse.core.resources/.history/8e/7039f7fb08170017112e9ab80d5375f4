@@ -6,25 +6,26 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <f:view contentType="text/html" contract="common,device-desktop,theme-#{theme.name}">
 	<ui:composition template="/templates/page-template.xhtml">
-		<ui:param name="pageTitle" value="Payment Failure">
+		<ui:param name="pageTitle" value="Payment Successful"/>
 		<ui:define name="panel-top">
 			<section>
-				<h1>Payment failed</h1>
-				<p>Unfortunately, something went wrong with the payment of your order.</p>
-			</section>
-		</ui:define>
+				<h1>Payment successful</h1>
+				<p>Thank you for ordering!</p>
+			</section>     
+      	</ui:define>
       	<ui:define name="panel-main">
       		<section>
       			<p>Your payment of 
       				<h:outputText value="#{shoppingCart.totalAmount}">
       					<f:convertNumber type="currency" currencySymbol="$"/>
       				</h:outputText>
-      				failed.</p>
+      				was successful.</p>
       			<h:form>
-      	        	<h:commandButton value="Finish" action="#{checkout.finishOrder}" styleClass="button-right">Finish</h:commandButton>
+      				<h:commandButton value="Finish" action="#{checkout.finishOrder}" styleClass="button-right">Finish</h:commandButton>
       			</h:form>
       		</section>
       	</ui:define>
       </ui:composition>
     </f:view>
-</html>	
+</html>
+   
