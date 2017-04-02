@@ -6,7 +6,7 @@
 		xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <ui:composition>
 	<h:inputText id="#{id}" value="#{value}" size="20">
-		<f:validator validatorId="com.conley.jsf.validator.Birthdate"/>
+		<f:validator validatorId="com.conley.jsf.validator.PhoneNumber"/>
 	</h:inputText>
 </ui:composition>
 </html>
