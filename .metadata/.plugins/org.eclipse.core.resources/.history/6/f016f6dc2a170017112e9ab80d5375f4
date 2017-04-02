@@ -42,7 +42,9 @@
                        	<mt:phoneNumber id="phoneNumber" value="#{userDetails.user.phoneNumber}"/>
 
                         <h:outputLabel for="birthDate">Birth date</h:outputLabel>
-                        <mt:inputDate id="birthDate" value="#{userDetails.user.birthdate"/>
+                        <h:inputText id="birthDate" p:type="date" value="#{userDetails.user.birthDate}">
+                            <f:convertDateTime pattern="yyyy-MM-dd"/>
+                        </h:inputText>
 
                         <h:outputLabel for="subscribedToNewsletter">Subscribe to the newsletter?</h:outputLabel>
                         <h:selectOneRadio id="subscribedToNewsletter"
