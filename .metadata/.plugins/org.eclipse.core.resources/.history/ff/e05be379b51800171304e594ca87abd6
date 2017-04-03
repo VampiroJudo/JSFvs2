@@ -29,7 +29,19 @@
 	<ui:define name="panel-main">
 		<ui:fragment rendered="#{not userManager.signedIn}">
 			<section>
-				<mc:signIn model="#signIn"/>
+				<h:form>
+					<h:panelGrid columns="2" styleClass="form-grid"
+								 columnClasses="form-column-label, form-column-input">
+					   <h:outputLabel for="username">Username</h:outputLabel>
+					   <h:inputText id="username" value="#{signIn.username"/>
+					   			
+					   <h:outputLabel for="password">Password</h:outputLabel>
+					   <h:inputSecret id="password" value="#{signIn.password"/>
+					   
+					   <h:outputText value=""/>
+					   <h:commandButton value="Submit" action="#{signIn.submit"/>
+					</h:panelGrid>
+				</h:form>
 			</section>
 		</ui:fragment>
 	</ui:define>
