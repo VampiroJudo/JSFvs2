@@ -21,9 +21,8 @@
 				   <validateRegex pattern="[A-za-z0-9]{2,20}"/>
 				
 				<h:outputLabel for="passwordInput">Password</h:outputLabel>
-				<h:inputSecret id="passwordInput" value="#{cc.password}" size="20"
+				<h:inputSecret id="passwordInput" value="#{cc.attrs.model.password}" size="20"
 							   validatorMessage="Your password must be at least 8 characters."/>
-				   <validateLength minimum="8"/>
 							
 				
 				<h:outputText value=""/>
