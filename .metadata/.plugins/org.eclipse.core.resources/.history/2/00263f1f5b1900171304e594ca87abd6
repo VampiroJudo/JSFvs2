@@ -27,7 +27,7 @@
 							
 				
 				<h:outputText value=""/>
-				<h:commandButton id="submitButton" value="Submit" action="#{cc.submit}"/>
+				<h:commandButton id="submitButton" value="Submit" action="#{cc.attrs.model.submit}"/>
 			</h:panelGrid>
 		</h:form>
 	</cc:implementation>

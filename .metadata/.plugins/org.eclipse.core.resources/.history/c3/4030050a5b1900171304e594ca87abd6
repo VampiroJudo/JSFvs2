@@ -29,7 +29,7 @@
 	<ui:define name="panel-main">
 		<ui:fragment rendered="#{not userManager.signedIn}">
 			<section>
-				<mc:signIn action="#{userManager.signIn}"/>
+				<mc:signIn model="#signIn"/>
 			</section>
 		</ui:fragment>
 	</ui:define>
